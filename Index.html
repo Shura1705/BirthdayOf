@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bestii! 🎂💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(-45deg,#ff9a9e,#fecfef,#fecfef,#ff9a9e);
+    background-size:400% 400%;
+    animation:gradientShift 15s ease infinite;
+    min-height:100vh;
+}
+@keyframes gradientShift{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.page{display:none;min-height:100vh;padding:20px}
+.page.active{display:flex;align-items:center;justify-content:center;animation:fade .7s ease}
+@keyframes fade{
+    from{opacity:0;transform:translateY(25px)}
+    to{opacity:1;transform:none}
+}
+.container{max-width:820px;width:100%;text-align:center}
+.content-card{
+    background:rgba(255,255,255,.93);
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+.main-title,.section-title{
+    font-family:'Dancing Script',cursive;
+    color:#d63384;
+}
+.main-title{font-size:3.3rem;margin-bottom:30px}
+.section-title{font-size:2.5rem;margin-bottom:30px}
+.message-item{
+    background:linear-gradient(135deg,#ffeef8,#fff5f8);
+    padding:20px;
+    margin-bottom:18px;
+    border-radius:15px;
+    border-left:4px solid #ff69b4;
+}
+.birthday-message,.blessing-message,.thank-message,.boards-message{
+    font-size:1.15rem;
+    color:#444;
+    line-height:1.7;
+}
+.shayari-item{
+    padding:25px;
+    margin-bottom:22px;
+    background:linear-gradient(135deg,#fff0f6,#fdf2f8);
+    border-radius:15px;
+    border:2px solid #ffb3d1;
+}
+.shayari-text{
+    font-family:'Dancing Script',cursive;
+    font-size:1.4rem;
+    color:#8b1538;
+    line-height:1.9;
+    white-space:pre-line;
+}
+.next-btn{
+    margin-top:20px;
+    padding:14px 40px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#ff69b4,#ff1493);
+    color:#fff;
+    font-size:1.1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+.next-btn:hover{transform:translateY(-3px)}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="p1">
+<div class="container"><div class="content-card">
+<h1 class="main-title">🎉 Happy Birthday Bestii! 🎂</h1>
+
+<div class="message-item"><p class="birthday-message">
+💖 Today is not just your birthday,  
+it’s a reminder of how special your presence is 🌸
+</p></div>
+
+<div class="message-item"><p class="birthday-message">
+✨ Your smile brings calm,  
+your words bring warmth,  
+and your existence itself feels comforting 🤍
+</p></div>
+
+<div class="message-item"><p class="birthday-message">
+🌷 May this year give you reasons to smile more  
+and stress you a little less 😊
+</p></div>
+
+<button class="next-btn" onclick="go(2)">Blessings 🙏</button>
+</div></div>
+</section>
+
+<!-- PAGE 2 : BLESSINGS -->
+<section class="page" id="p2">
+<div class="container"><div class="content-card">
+<h2 class="section-title">🙏 Blessings for You 🌟</h2>
+
+<div class="message-item"><p class="blessing-message">
+🙏 May God bless you with inner peace,  
+so even chaos feels manageable ✨
+</p></div>
+
+<div class="message-item"><p class="blessing-message">
+🌸 May your heart always stay soft,  
+and your mind always stay strong 💪
+</p></div>
+
+<div class="message-item"><p class="blessing-message">
+🌈 May life slowly unfold in your favor,  
+without rushing, without hurting 💖
+</p></div>
+
+<div class="message-item"><p class="blessing-message">
+🕊️ May you never lose yourself  
+while trying to fit into the world 🤍
+</p></div>
+
+<div class="message-item"><p class="blessing-message">
+✨ And may you always remember —  
+you are enough, just the way you are 🌷
+</p></div>
+
+<button class="next-btn" onclick="go(3)">Shayaris 📝</button>
+</div></div>
+</section>
+
+<!-- PAGE 3 : SHAYARI -->
+<section class="page" id="p3">
+<div class="container"><div class="content-card">
+<h2 class="section-title">📝 Shayaris 🌹</h2>
+
+<div class="shayari-item"><p class="shayari-text">
+तेरी मुस्कान सुकून बन जाती है 😊  
+हर उलझन खुद ही सुलझ जाती है ✨
+</p></div>
+
+<div class="shayari-item"><p class="shayari-text">
+तेरी मौजूदगी ही काफी होती है 💖  
+हर कमी अपने आप पूरी हो जाती है 🌸
+</p></div>
+
+<div class="shayari-item"><p class="shayari-text">
+खुश रहना ही सबसे बड़ी जीत है 🤍  
+बाकी सब तो वक़्त के साथ मिल जाता है 🌙
+</p></div>
+
+<button class="next-btn" onclick="go(4)">Thank You 💝</button>
+</div></div>
+</section>
+
+<!-- PAGE 4 : THANK YOU -->
+<section class="page" id="p4">
+<div class="container"><div class="content-card">
+<h2 class="section-title">💝 Thank You Bestii 🥰</h2>
+
+<div class="message-item"><p class="thank-message">
+💖 Thank you for being someone who listens,  
+even when words are messy.
+</p></div>
+
+<div class="message-item"><p class="thank-message">
+🌷 Your presence feels safe,  
+and that itself means a lot.
+</p></div>
+
+<div class="message-item"><p class="thank-message">
+✨ Some people don’t try to be special —  
+they just are. You’re one of them 🤍
+</p></div>
+
+<button class="next-btn" onclick="go(5)">Boards 🍀</button>
+</div></div>
+</section>
+
+<!-- PAGE 5 : BOARDS -->
+<section class="page" id="p5">
+<div class="container"><div class="content-card">
+<h2 class="section-title">📚 Best of Luck for Boards 🍀</h2>
+
+<div class="message-item"><p class="boards-message">
+✨ You’ve prepared sincerely.  
+Now trust yourself and breathe 🌸
+</p></div>
+
+<div class="message-item"><p class="boards-message">
+📖 Don’t chase perfection —  
+clarity and calm will do wonders 💖
+</p></div>
+
+<div class="message-item"><p class="boards-message">
+🍀 Walk into the exam hall knowing  
+you are capable and deserving 🌟
+</p></div>
+
+<div class="message-item"><p class="boards-message">
+🤍 No matter the result,  
+you are still strong, valuable, and enough.
+</p></div>
+
+<div class="message-item"><p class="boards-message">
+✨ All the very best.  
+You’ve got this 📚💪
+</p></div>
+
+</div></div>
+</section>
+
+<script>
+function go(n){
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    document.getElementById('p'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>
